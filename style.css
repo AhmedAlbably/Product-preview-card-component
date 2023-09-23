@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+  width: 200px;
+  height: 300px;
+}
+
+.card .content .brand {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.card .content h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.card .content p {
+  line-height: 1;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: hsl(228, 12%, 48%);
+}
+
+.card .content .number {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: hsl(158, 36%, 37%);
+}
+
+.card .content .number::after {
+  content: "$169.99";
+  font-size: 10px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-left: 10px;
+}
+
+.card .content button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card .content button i {
+  margin-right: 10px;
+}
+
+@media (max-width: 430px) {
+  .card img {
+    width: 150px;
+  }
+
+  .card .content {
+    width: 150px;
+    height: 225px;
+  }
+
+  .card .content .brand {
+    letter-spacing: 5px;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .card .content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+
+  .card .content p {
+    line-height: 1;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .card .content .number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .card .content .number::after {
+    margin-left: 5px;
+  }
+
+  .card .content button {
+    padding: 7px 0;
+    font-size: 10px;
+    font-weight: normal;
+  }
+}
